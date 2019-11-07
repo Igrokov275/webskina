@@ -52,6 +52,10 @@ body {
   color: #262626;
 }
 
+img {
+  max-width: 100%;
+}
+
 .section {
   padding: 100px 0;
 }
@@ -75,6 +79,7 @@ body {
   font-size: 12px;
   font-family: 'Montserrat SemiBold', sans-serif;
   background-color: #fff;
+  text-decoration: none;
 }
 
 .button {
@@ -84,6 +89,24 @@ body {
   background-color: #507fe1;
   color: #fff;
   font-family: 'Montserrat SemiBold', sans-serif;
+  text-decoration: none;
+}
+
+.button-fitting {
+  color: #507fe1;
+  background-color: #fff;
+}
+
+.button-add {
+  color: #fff;
+  background-color: #7c9fe8;
+}
+
+.button-like {
+  background-color: #507fe1;
+  height: 30px;
+  width: 30px;
+  border: none;
 }
 
 .bg-secondary {
@@ -448,6 +471,195 @@ body {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-bottom: 50px;
+  }
+}
+
+.catalog {
+  background-color: #f5f6f8;
+}
+
+.catalog-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog__card {
+  margin-bottom: 30px;
+}
+
+.catalog-card {
+  max-width: 570px;
+  max-height: 132px;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-card__buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog-card__button {
+  font-size: 11px;
+  border: none;
+  padding: 10px;
+  text-transform: uppercase;
+  height: 30px;
+}
+
+.catalog-card__tag {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  padding: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(80, 127, 225, 0.6);
+}
+
+.catalog-card__image {
+  display: block;
+}
+
+.catalog__link {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.catalog__link-more {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.catalog__description {
+  display: block;
+}
+
+@media (max-width: 1199px) {
+  .catalog-card {
+    max-width: 470px;
+  }
+}
+
+@media (max-width: 991px) {
+  .catalog-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.blog__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.blog__title {
+  font-size: 24px;
+  font-family: 'Montserrat SemiBold', sans-serif;
+}
+
+.blog__link-more {
+  color: #507fe1;
+  font-size: 16px;
+}
+
+.blog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blog-list__image {
+  min-width: 280px;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blog-list__image-1 {
+  background: url("../../img/blog-list/blog-post-1.jpg");
+}
+
+.blog-list__image-2 {
+  background: url("../../img/blog-list/blog-post-2.jpg");
+}
+
+.blog-list__image-3 {
+  background: url("../../img/blog-list/blog-post-3.jpg");
+}
+
+.blog-list__image-4 {
+  background: url("../../img/blog-list/blog-post-4.jpg");
+}
+
+.blog-list__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 80px;
+}
+
+.blog-card {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  max-width: 336px;
+  min-height: 280px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+@media (max-width: 1199px) {
+  .blog-card {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  .blog-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-card {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */

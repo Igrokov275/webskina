@@ -1,0 +1,53 @@
+.blog
+  &__heading
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 70px
+  &__title
+    font-size: 24px
+    +bold
+  &__link-more
+    color: $primary
+    font-size: 16px
+  &-list
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &__image
+      min-width: 280px
+      min-height: 200px
+      background-repeat: no-repeat
+      background-size: cover
+      &-1
+        background: url("../../img/blog-list/blog-post-1.jpg")
+      &-2
+        background: url("../../img/blog-list/blog-post-2.jpg")
+      &-3
+        background: url("../../img/blog-list/blog-post-3.jpg")
+      &-4
+        background: url("../../img/blog-list/blog-post-4.jpg")
+    &__text
+      display: flex
+      justify-content: center
+      align-items: center
+      min-height: 80px
+  &-card
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08)
+    text-align: center
+    max-width: 336px
+    min-height: 280px
+    margin-right: 10px
+    margin-bottom: 20px
+    flex-basis: 20%
+
+@media (max-width: 1199px)
+  .blog
+    &-card
+      flex-basis: 40%
+    &-list
+      justify-content: center
+@media (max-width: 768px)
+  .blog
+    &-card
+      flex-basis: 90%
